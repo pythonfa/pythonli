@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>汽车租赁后台管理</title>
+		<link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}"/>
+		<link rel="stylesheet" type="text/css" href="{% static 'img/10.jpg' %}"/>
+	</head>
+	<body>
+		<div class="navbar">
+			<a href="#" class="logo">汽车租赁管理系统</a>
+			<ul class="nav">
+				<li><a href="#home">首页</a></li>
+				<li><a href="#about">关于</a></li>
+				<li><a href="#portfolio">联系</a></li>
+				<li><a href="#services">博客</a></li>
+				<li><a href="admin">登录</a></li>
+			</ul>
+		</div>
+		
+		<div class="banner-area" id="home">
+		</div>
+		<div class="about-area" id="about">
+			<div class="text-part">
+				<h1>简介</h1>
+				<p>
+					该网站使用Python语言与Python Web开发框架Django开发，于2019年12月10日开发完成，是
+                    2017级物联网工程专业学生数据库设计，是对汽车租赁的基本信息的管理，包括用户信息，车辆信
+                    息，管理员信息，车辆保险信息的增加、删除、修改、查询，通过该系统管理租赁信息，能够大大减
+                    轻了管理人员的工作压力，同时也为公司节约了人力资源。
+                </p>
+			</div>
+		</div>
+		<div class="port-area" id="portfolio">
+			<div class="text-part">
+				<h1>服务</h1>
+				<p>
+					作者：17物网班 李国发<br>
+					电话：15585189210<br>
+					邮箱：1902612430@qq.com<br>
+					QQ:1902612430
+                </p>
+			</div>
+		</div>
+		<div class="service-area" id="services">
+			<div class="text-part">
+				<h1>博客</h1>
+				<p>
+                    Django是一个开放源代码的Web应用框架，由Python写成。采用了MTV的框架模式，即模型M，视图V和模版T。
+                    它最初是被开发来用于管理劳伦斯出版集团旗下的一些以新闻内容为主的网站的，即是CMS（内容管理系统）软件。
+                    并于2005年7月在BSD许可证下发布。这套框架是以比利时的吉普赛爵士吉他手Django Reinhardt来命名的。
+                    Django 官网的链接https://www.djangoproject.com/
+                </p>
+                <p>python web开发框架还有Flask框架、web.py框架、Tornado框架，urboGears框架等</p>
+			</div>
+		</div>
+	</body>
+</html>

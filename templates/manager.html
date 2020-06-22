@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="Font-Awesome-3.2.1/css/font-awesome.css"/>
+		<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="Font-Awesome-3.2.1/css/font-awesome.min.css"/>
+	</head>
+	<body>
+		<!-- 导航 -->
+		<nav class="navbar navbar-inverse">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>                        
+		      </button>
+		      <a class="navbar-brand" href="#">汽车租赁后台管理</a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="myNavbar">
+		      <ul class="nav navbar-nav">
+		        <li class="active"><a href="index.html">首页</a></li>
+		        <li><a href="manager.html">管理员信息</a></li>
+		        <li><a href="user.html">用户信息</a></li>
+				<li><a href="car.html">汽车信息</a></li>
+				<li><a href="rent.html">租赁信息</a></li>
+				<li><a href="secure.html">保险信息</a></li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+		
+		
+				
+		<table class="table">
+		  <!-- <caption>上下文表格布局</caption> -->
+		  <thead>
+			<tr>
+			  <th>编号</th>
+			  <th>用户名</th>
+			  <th>密码</th>
+			  <th>邮箱</th>
+			  <th>电话</th>
+			</tr>
+		  </thead>
+		  <tbody>
+          {{% for item in date %}}
+			<tr class="success">
+			  <td>{{item.id}}</td>
+			  <td>{{item.用户名}}</td>
+			  <td>{{item.密码}}</td>
+			  <td>{{item.邮箱}}</td>
+			  <td>{{item.电话}}</td>
+			</tr>
+          {{% endfor %}}
+		  </tbody>
+		</table>
+
+		
+		
+		 
+		<div class="jumbotron text-center" style="margin-bottom:0">
+		  <p>底部内容</p>
+		</div>
+
+
+		
+	</body>
+</html>
